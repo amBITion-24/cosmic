@@ -143,7 +143,7 @@ for index, row in recommendations.iterrows():
                 <p><strong>Email:</strong> {row['email']}</p>
                 <p><strong>Similarity Score:</strong> {row['similarity_score']:.2f}</p>
                 <button style="background-color: lightgreen; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease; margin-top:20px;">
-                    <a href="/payment-gateway.html" style="text-decoration: none; color: black; font-weight:bold">Book Guide</a>
+                    <a href="https://net-worthy.web.app/fake-payment.html" style="text-decoration: none; color: black; font-weight:bold">Book Guide</a>
                 </button>
             </div>
         </div>

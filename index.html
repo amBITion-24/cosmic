@@ -369,6 +369,31 @@
     <iframe	style="width: 400px; height: 600px;" src="https://app.fastbots.ai/embed/clyauv0pc00w0r9bcm9c9oc8a"></iframe>
     <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="clyauv0pc00w0r9bcm9c9oc8a"></script>
 
+
+    <!-- for firebase analytics -->
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA7AYna6Rw5QOD1HGh_Y_onIcuob1Wmd-M",
+      authDomain: "net-worthy.firebaseapp.com",
+      projectId: "net-worthy",
+      storageBucket: "net-worthy.appspot.com",
+      messagingSenderId: "313484773517",
+      appId: "1:313484773517:web:9de55c6d7396d813e63ac4",
+      measurementId: "G-V112CFEWVL"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    
     <script src="js/main.js"></script>
 </body>
 

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="shortcut icon" href="/assets/logo.webp" type="image/x-icon">
 
-     <!-- linking remix icons -->
-     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- linking remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,7 +18,8 @@
         <div class="container">
             <form action="/payment-gateway.html" method="post">
                 <div class="fake-notice">
-                    <p><i class="ri-information-line"></i> This is a fake payment form. No real payment will be processed.</p>
+                    <p><i class="ri-information-line"></i> This is a fake payment form. No real payment will be
+                        processed.</p>
                 </div>
                 <h1>
                     <i class="fa-regular fa-user"></i>
@@ -62,8 +63,8 @@
                     </div>
                 </div>
                 <div class="btns">
-                    <button type="submit" class="pay-btn">PAY NOW</button>
-                    <button type="button" onclick="history.back()" class="rtn-btn">Return Back</button>
+                    <button type="button" class="pay-btn" onclick="window.location.href='/pages/thankyou.html'">PAY
+                        NOW</button> <button type="button" onclick="history.back()" class="rtn-btn">Return Back</button>
                 </div>
             </form>
         </div>
