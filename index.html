@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networthy - Your Trusted Relocation Guide</title>
+    <meta name="description"
+        content="Networthy helps you relocate smoothly to Bangalore with verified local guides, CityMates, offering support for accommodation, city navigation, and community integration.">
+    <meta name="keywords"
+        content="Networthy, relocation guide, Bangalore, CityMates, accommodation, city navigation, community integration">
+    <meta property="og:title" content="Networthy - Your Trusted Relocation Guide">
+    <meta property="og:description"
+        content="Networthy helps you relocate smoothly to Bangalore with verified local guides, CityMates, offering support for accommodation, city navigation, and community integration.">
+    <meta property="og:image" content="assets/web-img.png">
+    <meta property="og:url" content="https://net-worthy.web.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Networthy - Your Trusted Relocation Guide">
+    <meta name="twitter:description"
+        content="Networthy helps you relocate smoothly to Bangalore with verified local guides, CityMates, offering support for accommodation, city navigation, and community integration.">
+    <meta name="twitter:image" content="assets/web-img.png">
+
+    <link rel="shortcut icon" href="/assets/logo.webp" type="image/x-icon"> <!-- web favicon -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- linking main css file -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- linking remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- linking fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+
+<body>
+    <!-- nav bar starts -->
+    <header>
+        <div class="navbar-area">
+            <div class="nav-container container">
+                <nav class="site-navbar">
+                    <div class="main-title">
+                        <a href="#" class="site-logo"><img src="assets/logo.webp" alt=""></a>
+                        <a href="#" class="title">Networthy</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="m-top"><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-shield-heart"></i> Services</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-user-shield"></i> About</a></li>
+                        <li><a href="#faqs"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                        <div class="cta mobile-view">
+                            <button id="getStartedBtnMobile">Get Started <i class="ri-arrow-right-up-line"></i></button>
+                        </div>
+                    </ul>
+                    <div class="cta desktop-view">
+                        <button id="getStartedBtnDesktop">Get Started <i class="ri-arrow-right-up-line"></i></button>
+                    </div>
+                    <!-- nav-toggler for mobile -->
+                    <button class="nav-toggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- nav bar ends -->
+
+    <!-- pop-up window starts -->
+    <div class="popup" id="popupForm">
+        <div class="popup-content">
+            <span class="close" id="closePopup"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h2>Get Started with Networthy</h2>
+            <form id="popupFormContent">
+                <label for="name">Name<i class="asterisk">*</i></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email<i class="asterisk">*</i></label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <label for="city">Destination City<i class="asterisk">*</i></label>
+                <select id="city" name="city" required>
+                    <option value="">Select city</option>
+                    <option value="bangalore">Bengaluru</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+                <label for="moveDate">Relocating on<i class="asterisk">*</i></label>
+                <input type="date" id="moveDate" name="moveDate" required>
+                <div class="buttons">
+                    <button type="button" class="cancel" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="lets-go">Let's Go<i class="fa-solid fa-angle-right"
+                            style="margin-left: 6px;"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- pop-up window ends -->
+
+
+    <!-- hero section starts -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p>Your trusted guide for seamless relocation to <br><span id="city-name">Bangalore</span><span
+                        id="city-name">.</span></p>
+                <br>
+                <span class="sub-text"><i style="font-size: 20px;" class="ri-lightbulb-flash-line"></i> Find reliable
+                    information and support with ease.</span>
+                <br>
+                <button class="read-btn" onclick="location.href='pages/howitworks.html'" id="read">Read how it works <i
+                        class="fa-solid fa-chevron-right"></i> </button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Networthy.svg" alt="networthy">
+            </div>
+        </div>
+    </section>
+    <!-- hero section starts -->
+
+    <!-- services section starts -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our <span class="brand-color">Services</span></h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class="fa-solid fa-map-location-dot service-icon"></i>
+                    <h3>Local Guidance</h3>
+                    <p>Get personalized advice and recommendations from verified local guides to help you navigate your
+                        new city.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-house-user service-icon"></i>
+                    <h3>Accommodation Assistance</h3>
+                    <p>Find the best housing options based on your preferences and budget, with support throughout the
+                        process.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-briefcase service-icon"></i>
+                    <h3>Professional Networking</h3>
+                    <p>Connect with professionals in your field and expand your network to enhance your career
+                        opportunities.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-heart service-icon"></i>
+                    <h3>Community Integration</h3>
+                    <p>Engage in local community events and activities to help you settle in and feel at home quickly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends -->
+
+
+    <!-- cities name section starts  -->
+    <section id="destination-cities">
+        <div class="section-title">
+            <h2>Explore <span class="brand-color">Destination Cities</span></h2>
+
+        </div>
+        <div class="city-containers">
+            <div class="city-container" onclick="location.href='pages/City/bangalore.html';">
+                <div class="city-img" style="background-image: url('./assets/bangalore.JPG');">
+                    <div class="city-overlay">
+                        <h3>Bangalore <i class="ri-external-link-line"></i></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="city-container" onclick="location.href='hyderabad.html';">
+                <div class="city-img" style="background-image: url('./assets/hyderabad.JPG');">
+                    <div class="city-overlay">
+                        <h3>Hyderabad <i class="ri-external-link-line"></i></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="city-container" onclick="location.href='mumbai.html';">
+                <div class="city-img" style="background-image: url('./assets/mumbai.jpg');">
+                    <div class="city-overlay">
+                        <h3>Mumbai <i class="ri-external-link-line"></i></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="city-container" onclick="location.href='delhi.html';">
+                <div class="city-img" style="background-image: url('./assets/delhi.jpg');">
+                    <div class="city-overlay">
+                        <h3>Delhi <i class="ri-external-link-line"></i></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="soon-title">
+            <p class="coming-soon-text">More cities coming soon.</p>
+
+        </div>
+    </section>
+    <!-- cities name section ends -->
+
+
+    <!-- about section starts -->
+    <section id="about" class="about-section">
+        <h1><span class="brand-color">About</span> Us</h1>
+        <div class="about-content">
+
+            <div>
+
+                <p>Networthy is a decentralized platform connecting individuals moving to new cities with verified local
+                    guides, "CityMates." These guides provide personalized support, helping users find accommodations,
+                    safe neighborhoods, and essential services for a smooth, stress-free relocation.
+                </p>
+                <br><br>
+                <p>Our mission is to eliminate the anxiety of relocating by providing reliable local assistance.
+                    Networthy
+                    connects users with trusted CityMates for insights and guidance, ensuring a smooth transition.</p>
+                <br>
+                <button class="button" onclick="window.location.href = '/pages/about.html';">
+                    Our Story
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+
+                <br><br><br>
+            </div>
+            <div><img src="/assets/about.gif" alt=""></div>
+        </div>
+    </section>
+    <!-- about section ends -->
+
+
+    <!-- FAQs section starts -->
+    <section id="faqs" class="faq-section">
+
+        <h1>Frequently Asked <span class="brand-color">Questions</span></h1>
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    How does Networthy work? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Networthy connects you with local guides called CityMates, who provide personalized assistance
+                        and information about your new city.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    What services do CityMates offer? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>CityMates help you find suitable accommodations, navigate neighborhoods, and locate essential
+                        services like grocery stores and hospitals.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    How can I find a CityMate? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>You can browse profiles of available CityMates on our platform and choose one based on your
+                        preferences and needs.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Is Networthy available in all cities? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Currently, Networthy operates in selective cities. We are expanding our coverage to more cities
+                        over time.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Are CityMates verified? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Yes, all CityMates undergo a verification process to ensure reliability and trustworthiness.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Is there a fee for using Networthy? <span class="icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Networthy is free to use for users seeking assistance. CityMates may charge for personalized
+                        services they offer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQs section ends-->
+
+
+
+    <!-- footer section starts -->
+    <footer id="contact" class="new_footer_area bg_color" style="padding-top: 20vh;"> <!-- contact section -->
+        <div class="container">
+            <div class="footer-sections">
+                <!-- Get in Touch Section -->
+                <div class="footer-column">
+                    <h4>Feedback</h4>
+
+                    <form id="feedbackForm" action="#" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we improve our service?"
+                            required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p id="submitMessage"
+                        style="display: none; color: green; background-color: #d0fdd1; padding: 6px; border-radius: 4px;">
+                        <i class="fa-solid fa-circle-check"></i> Message submitted successfully
+                    </p>
+                </div>
+
+                <!-- Help Section -->
+                <div class="footer-column quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="#faqs">FAQ</a></li>
+                        <li><a href="/pages/terms.html">Terms & Conditions</a></li>
+                        <li><a href="/pages/privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section with Social Media Icons -->
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/Kishore-SR" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/@Kishore-SR" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.github.com/Kishore-SR" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:kishoresr01@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new_footer_top">
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="last-row">
+                        <p class="last-text">© Networthy 2024 | All rights reserved.</p>
+                        <p>Made with <i class="fa-solid fa-heart"></i> by COSMIC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

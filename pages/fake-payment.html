@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway - Networthy</title>
+    <link rel="stylesheet" href="/css/fake-payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="/assets/logo.webp" type="image/x-icon">
+
+     <!-- linking remix icons -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form action="/payment-gateway.html" method="post">
+                <div class="fake-notice">
+                    <p><i class="ri-information-line"></i> This is a fake payment form. No real payment will be processed.</p>
+                </div>
+                <h1>
+                    <i class="fa-regular fa-user"></i>
+                    Your Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">Full Name</label>
+                        <input type="text" name="f-name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" placeholder="Bangalore" required>
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state" placeholder="Karnataka" required>
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip" placeholder="560001" required>
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Credit Card No.</label>
+                    <input type="text" name="card-num" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="expire">Exp</label>
+                        <input type="text" name="expire" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="security">CCV</label>
+                        <input type="text" name="security" placeholder="123" required>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button type="submit" class="pay-btn">PAY NOW</button>
+                    <button type="button" onclick="history.back()" class="rtn-btn">Return Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

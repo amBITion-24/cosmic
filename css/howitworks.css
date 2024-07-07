@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap"); 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --page-color: #d3f4ff;
+  --text-black-colour: rgb(39, 37, 37);
+  --brand-color: #e6b401;
+}
+
+body {
+  background-color: var(--page-color);
+}
+
+/* Header section */
+header {
+  margin-top: 10vh;
+  color: var(--text-black-colour);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.center-text {
+  font-size: 50px;
+  font-weight: 600;
+  width: 50vw;
+  margin: auto;
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  header {
+    margin-top: 8vh;
+    padding: 2px 0;
+  }
+
+  .center-text {
+    font-size: 30px;
+    font-weight: 600;
+    width: 98vw;
+  }
+
+  header p {
+    width: 80vw;
+    margin: auto;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+}
+
+/* Image section */
+.img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-section img {
+  width: 40vw;
+}
+
+@media (max-width: 900px) {
+  .img-section img {
+    width: 94vw;
+  }
+}
+
+/* Main content section */
+main {
+  width: 60vw;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.big-text {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 24px;
+  color: #555;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #555;
+  background-color: rgb(230, 253, 192);
+  padding: 40px 60px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.solution {
+  margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+  main {
+    width: 90vw;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .big-text {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    background-color: rgb(230, 253, 192);
+    padding: 40px 60px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .solution {
+    margin-top: 50px;
+  }
+}
+

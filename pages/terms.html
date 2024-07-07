@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms - Networthy</title>
+    <link rel="shortcut icon" href="/assets/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <!-- linking remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- linking fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .terms-container {
+            background-color: #fff;
+            padding: 40px 20px;
+            max-width: 70vw;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+h1 {
+    margin-top: 10vh;
+}
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            font-family: "Roboto Mono", monospace;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .terms-container {
+                max-width: 92vw;
+                padding: 20px;
+            }
+            h1 {
+    margin-top: 4vh;
+}
+            h2 {
+            color: #616161;
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <header>
+        <div class="navbar-area">
+            <div class="nav-container container">
+                <nav class="site-navbar">
+                    <div class="main-title">
+                        <a href="/index.html" class="site-logo"><img src="/assets/logo.webp" alt=""></a>
+                        <a href="/index.html" class="title">Networthy</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="m-top"><a href="/index.html#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="/index.html#services"><i class="fa-solid fa-shield-heart"></i> Services</a></li>
+                        <li><a href="/index.html#about"><i class="fa-solid fa-user-shield"></i> About</a></li>
+                        <li><a href="/index.html#faqs"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
+                        <li><a href="/index.html#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                        <div class="cta mobile-view">
+                            <button id="getStartedBtnMobile">Get Started <i class="ri-arrow-right-up-line"></i></button>
+                        </div>
+                    </ul>
+                    <div class="cta desktop-view">
+                        <button id="getStartedBtnDesktop">Get Started <i class="ri-arrow-right-up-line"></i></button>
+                    </div>
+                    <!-- nav-toggler for mobile -->
+                    <button class="nav-toggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- nav bar ends -->
+
+    <!-- pop-up window starts -->
+    <div class="popup" id="popupForm">
+        <div class="popup-content">
+            <span class="close" id="closePopup"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h2>Get Started with Networthy</h2>
+            <form id="popupFormContent">
+                <label for="name">Name<i class="asterisk">*</i></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email<i class="asterisk">*</i></label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <label for="city">Destination City<i class="asterisk">*</i></label>
+                <select id="city" name="city" required>
+                    <option value="">Select city</option>
+                    <option value="bangalore">Bengaluru</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+                <label for="moveDate">Relocating on<i class="asterisk">*</i></label>
+                <input type="date" id="moveDate" name="moveDate" required>
+                <div class="buttons">
+                    <button type="button" class="cancel" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="lets-go">Let's Go<i class="fa-solid fa-angle-right"
+                            style="margin-left: 6px;"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- pop-up window ends -->
+
+    <div class="terms-container">
+        <h1>Terms and Services</h1>
+        <p>Welcome to Networthy! By using our services, you agree to the following terms and conditions:</p>
+<br>
+        <h2>1. Introduction</h2>
+        <p>Networthy is a platform designed to assist individuals relocating to new cities by connecting them with local
+            guides, known as "CityMates." Our goal is to provide reliable local assistance to ensure a smooth
+            transition.</p>
+<br>
+        <h2>2. User Accounts</h2>
+        <p>To access certain features of our platform, you may be required to create an account. You agree to provide
+            accurate and up-to-date information during the registration process and to keep your account information
+            secure.</p>
+<br>
+        <h2>3. Use of Services</h2>
+        <p>Networthy provides information and guidance to help you navigate your new city. However, we do not guarantee
+            the accuracy or completeness of the information provided by CityMates or other users.</p>
+<br>
+        <h2>4. User Responsibilities</h2>
+        <p>You are responsible for your interactions with CityMates and other users of the platform. Networthy is not
+            liable for any disputes or issues that may arise from these interactions.</p>
+<br>
+        <h2>5. Privacy Policy</h2>
+        <p>We value your privacy. Please review our Privacy Policy to understand how we collect, use, and protect your
+            personal information.</p>
+<br>
+        <h2>6. Changes to Terms</h2>
+        <p>Networthy reserves the right to modify these terms at any time. Any changes will be effective immediately
+            upon posting on our website. Your continued use of the platform constitutes your acceptance of the revised
+            terms.</p>
+<br>
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns about these terms, please contact us at support@networthy.com.</p>
+    </div>
+
+    <footer>© Networthy 2024 | All rights reserved</footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

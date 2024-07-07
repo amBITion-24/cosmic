@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works | Networthy</title>
+
+    <link rel="shortcut icon" href="/assets/logo.webp" type="image/x-icon"> <!-- web favicon -->
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/howitworks.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- linking remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- linking fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- nav bar starts -->
+    <header>
+        <div class="navbar-area">
+            <div class="nav-container container">
+                <nav class="site-navbar">
+                    <div class="main-title">
+                        <a href="/index.html" class="site-logo"><img src="../assets/logo.webp" alt=""></a>
+                        <a href="/index.html" class="title">Networthy</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="m-top"><a href="/index.html#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="/index.html#services"><i class="fa-solid fa-shield-heart"></i> Services</a></li>
+                        <li><a href="/index.html#about"><i class="fa-solid fa-user-shield"></i> About</a></li>
+                        <li><a href="/index.html#faqs"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
+                        <li><a href="/index.html#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                        <div class="cta mobile-view">
+                            <button id="getStartedBtnMobile">Get Started <i class="ri-arrow-right-up-line"></i></button>
+                        </div>
+                    </ul>
+                    <div class="cta desktop-view">
+                        <button id="getStartedBtnDesktop">Get Started <i class="ri-arrow-right-up-line"></i></button>
+                    </div>
+                    <!-- nav-toggler for mobile -->
+                    <button class="nav-toggler">
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- nav bar ends -->
+
+  <!-- pop-up window starts -->
+<div class="popup" id="popupForm">
+    <div class="popup-content">
+        <span class="close" id="closePopup"><i class="fa-solid fa-circle-xmark"></i></span>
+        <h2>Get Started with Networthy</h2>
+        <form id="popupFormContent">
+            <label for="name">Name<i class="asterisk">*</i></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email<i class="asterisk">*</i></label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <label for="city">Destination City<i class="asterisk">*</i></label>
+            <select id="city" name="city" required>
+                <option value="">Select city</option>
+                <option value="bangalore">Bengaluru</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+            </select>
+            <label for="moveDate">Relocating on<i class="asterisk">*</i></label>
+            <input type="date" id="moveDate" name="moveDate" required>
+            <div class="buttons">
+                <button type="button" class="cancel" id="cancelBtn">Cancel</button>
+                <button type="submit" class="lets-go">Let's Go<i class="fa-solid fa-angle-right"
+                        style="margin-left: 6px;"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- pop-up window ends -->
+
+
+    <!-- header sections starts -->
+    <header>
+        <h1 class="center-text">Relocating has never <br> been this easy.<br> <span class="brand-color">Until
+                Now.</span>
+        </h1>
+        <p>Networthy is the ultimate relocation guide for students and professionals.</p>
+    </header>
+
+    <section class="img-section">
+        <img src="../assets/howitworks.png" alt="works">
+    </section>
+    <!-- header sections ends -->
+
+    <!-- main section starts -->
+    <main>
+        <section class="problems">
+            <h2><span class="brand-color big-text">Challenges Faced</span><br> by Students and Working Professionals
+            </h2>
+            <p>Moving to a new city can be daunting, especially for students and working professionals. Finding
+                trustworthy information and local support can be challenging and stressful.</p>
+        </section>
+        <section class="solution">
+            <h2>We bring you the <span class="big-text" style="color: #4caf50">Solution</span></h2>
+            <p>Our platform connects you with CityMates who guide you and help you understand your new city. Here's how
+                it works:</p>
+            <ol>
+                <li><strong>Fill the Form:</strong> Provide your name, email, and the city you're relocating to.</li>
+                <li><strong>Get Assigned a CityMate:</strong> Based on your preferences such as profession, age, and
+                    interests, we match you with a suitable CityMate.</li>
+                <li><strong>Start Your Journey:</strong> Your CityMate will guide you and provide valuable insights
+                    about the new city.</li>
+            </ol>
+        </section>
+    </main>
+    <!-- main section ends -->
+
+    <!-- footer section starts -->
+    <footer class="new_footer_area bg_color">
+        <div class="container">
+            <div class="footer-sections">
+                <!-- Get in Touch Section -->
+                <div class="footer-column">
+                    <h4>Feedback</h4>
+
+                    <form id="feedbackForm" action="#" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we improve our service?"
+                            required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p id="submitMessage"
+                        style="display: none; color: green; background-color: #d0fdd1; padding: 6px; border-radius: 4px;">
+                        <i class="fa-solid fa-circle-check"></i> Message submitted successfully
+                    </p>
+                </div>
+
+                <!-- Help Section -->
+                <div class="footer-column quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/index.html#faqs">FAQ</a></li>
+                        <li><a href="/pages/terms.html">Terms & Conditions</a></li>
+                        <li><a href="/pages/privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section with Social Media Icons -->
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/Kishore-SR" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/@Kishore-SR" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.github.com/Kishore-SR" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:kishoresr01@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new_footer_top">
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="last-row">
+                        <p class="last-text">© Networthy 2024 | All rights reserved.</p>
+                        <p>Made with <i class="fa-solid fa-heart"></i> by COSMIC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends -->
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

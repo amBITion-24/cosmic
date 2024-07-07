@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    width: 60%;
+    background-color: #ffd43b;
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideUp 2000ms ease;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #493b76;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form {
+    font-family: "Arimo";
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #494949;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8e2807;
+}
+
+.name, .address-info, .cc-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.name div, .address-info div, .cc-info div {
+    flex: 1;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .pay-btn {
+        background-color: rgb(85, 127, 241);
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .rtn-btn {
+        background-color: lightcoral;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .pay-btn:hover,
+    .rtn-btn:hover {
+        animation-name: btn-hov;
+        animation-duration: 550ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+input::placeholder {
+    color: lightgray; 
+    opacity: 1; 
+}
+
+input:-ms-input-placeholder { 
+    color: lightgray;
+}
+.fake-notice {
+    background-color: #d4edda; 
+    color: #155724;
+    padding: 2px;
+    border: 2px solid #09ce37; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 0.875rem; 
+}
+
+@media (max-width: 736px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .name, .address-info, .cc-info {
+        flex-direction: column;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    form h1 {
+        text-align: center;
+    }
+}
