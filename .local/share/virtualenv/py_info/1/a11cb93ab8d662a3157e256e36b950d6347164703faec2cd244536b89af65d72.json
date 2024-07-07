@@ -1,0 +1,75 @@
+{
+  "content": {
+    "_creators": null,
+    "architecture": 64,
+    "base_exec_prefix": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+    "base_prefix": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+    "distutils_install": {
+      "data": "",
+      "headers": "include/python3.10/UNKNOWN",
+      "platlib": "lib/python3.10/site-packages",
+      "purelib": "lib/python3.10/site-packages",
+      "scripts": "bin"
+    },
+    "exec_prefix": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+    "executable": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/bin/python3.10",
+    "file_system_encoding": "utf-8",
+    "has_venv": true,
+    "implementation": "CPython",
+    "max_size": 9223372036854775807,
+    "original_executable": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/bin/python3.10",
+    "os": "posix",
+    "path": [
+      "/nix/store/mda88y7xys3cvaxbv7cc2h4a15qhlw9m-poetry-in-venv/env/lib/python3.10/site-packages/virtualenv/discovery",
+      "/nix/store/k9jk15f7qqd32rx5fxx7msv7b4jkcir5-sitecustomize/lib/python/site-packages",
+      "/nix/store/lyjvn7zvg3a9cdcrl9hbbjmacpbyaalk-python3.10-pip-24.0/lib/python3.10/site-packages",
+      "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python310.zip",
+      "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python3.10",
+      "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python3.10/lib-dynload",
+      "/home/runner/Recommendations/.pythonlibs/lib/python3.10/site-packages",
+      "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python3.10/site-packages",
+      "/home/runner/Recommendations/.pythonlibs/lib/python3.10/site-packages",
+      "/nix/store/j0azjp8cyqvf76fmx06kr10c5s52s45d-python3.10-setuptools-69.5.1/lib/python3.10/site-packages"
+    ],
+    "platform": "linux",
+    "prefix": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+    "real_prefix": null,
+    "stdout_encoding": "utf-8",
+    "sysconfig": {
+      "makefile_filename": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python3.10/config-3.10-x86_64-linux-gnu/Makefile"
+    },
+    "sysconfig_paths": {
+      "data": "{base}",
+      "include": "{installed_base}/include/python{py_version_short}{abiflags}",
+      "platlib": "{platbase}/{platlibdir}/python{py_version_short}/site-packages",
+      "platstdlib": "{platbase}/{platlibdir}/python{py_version_short}",
+      "purelib": "{base}/lib/python{py_version_short}/site-packages",
+      "scripts": "{base}/bin",
+      "stdlib": "{installed_base}/{platlibdir}/python{py_version_short}"
+    },
+    "sysconfig_scheme": null,
+    "sysconfig_vars": {
+      "PYTHONFRAMEWORK": "",
+      "abiflags": "",
+      "base": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+      "installed_base": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+      "platbase": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14",
+      "platlibdir": "lib",
+      "py_version_short": "3.10"
+    },
+    "system_executable": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/bin/python3.10",
+    "system_stdlib": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python3.10",
+    "system_stdlib_platform": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/lib/python3.10",
+    "version": "3.10.14 (main, Mar 19 2024, 21:46:16) [GCC 13.2.0]",
+    "version_info": {
+      "major": 3,
+      "micro": 14,
+      "minor": 10,
+      "releaselevel": "final",
+      "serial": 0
+    },
+    "version_nodot": "310"
+  },
+  "path": "/nix/store/rwxj49zghamyhy07b67yhiq64bmznvmm-python3-3.10.14/bin/python3.10",
+  "st_mtime": 1.0
+}
